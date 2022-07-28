@@ -1,9 +1,33 @@
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./cinzel-v19-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./cinzel-v19-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./cinzel-v19-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./cinzel-v19-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./cinzel-v19-latin-700.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./cinzel-v19-latin-700.svg#Cinzel")
+      format("svg"); /* Legacy iOS */
+}
+
+#grid-container {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  background-image: url("../images/board.png");
+  background-size: 100%;
+  padding: 60px 60px 40px 60px;
+}
+
 #game-grid {
+  margin: 0px 90px 0 90px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 70px;
-  margin: 60px;
+  gap: 40px;
 }
 
 .game-card {

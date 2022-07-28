@@ -1,4 +1,4 @@
-import React, { setState, useEffect } from "react";
+import React from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -10,12 +10,16 @@ function GameCard(props) {
 
   return (
     <div onClick={handleClick} name={name} className="game-card">
-      <Typography variant="h4">{name}</Typography>
+      <Typography variant="h5" sx={{ fontFamily: "Cinzel", color: "white" }}>
+        {name}
+      </Typography>
       <Card
         sx={{
           width: "150px",
           height: "215px",
           backgroundImage: `url(${image})`,
+          borderRadius: "8px",
+          border: "2px solid yellow",
         }}
       >
         <CardContent></CardContent>

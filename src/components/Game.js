@@ -63,8 +63,14 @@ function Game(props) {
   }, [guessed]);
 
   return (
-    <div>
+    <div id="top">
       <div id="score-board">
+        <Typography
+          variant="h1"
+          sx={{ fontFamily: "Cinzel", fontSize: "3.5rem" }}
+        >
+          Witcher III Memory Game
+        </Typography>
         <Typography variant="h4">score: {score}</Typography>
         <Typography variant="h4">
           <strong>highScore:</strong> {highScore}
