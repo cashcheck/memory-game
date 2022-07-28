@@ -13,8 +13,8 @@ function GameCard(props) {
       <Typography variant="h4">{name}</Typography>
       <Card
         sx={{
-          width: "249px",
-          height: "357px",
+          width: "150px",
+          height: "215px",
           backgroundImage: `url(${image})`,
         }}
       >
