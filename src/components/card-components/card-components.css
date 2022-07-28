@@ -1,0 +1,16 @@
+#game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 80px;
+  margin: 80px;
+}
+
+.game-card {
+  transition: 0.3s;
+}
+
+.game-card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
